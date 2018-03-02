@@ -21,7 +21,7 @@ sudo apt-get install -y \
     pkg-config
 
 # Python 2.7
-sudo apt-get install -y python-dev python-numpy python-py python-pytest -y
+sudo apt-get install -y python3-dev python3-numpy python3-py python3-pytest -y
 # GStreamer support
 sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
 
@@ -49,8 +49,8 @@ cmake \
     -DBUILD_ZLIB=OFF \
     -DBUILD_EXAMPLES=ON \
     -DBUILD_opencv_java=OFF \
-    -DBUILD_opencv_python2=ON \
-    -DBUILD_opencv_python3=OFF \
+    -DBUILD_opencv_python2=OFF \
+    -DBUILD_opencv_python3=ON \
     -DENABLE_PRECOMPILED_HEADERS=OFF \
     -DWITH_OPENCL=OFF \
     -DWITH_OPENMP=OFF \
